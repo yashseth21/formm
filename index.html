@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission Form</title>
+</head>
+<body>
+    <h2 style="text-align:center;">College Admission Form</h2>
+    <form action="#" method="post">
+        <table border="1" cellpadding="10" cellspacing="0" align="center">
+            <tr>
+                <td><label for="fullname">Full Name</label></td>
+                <td><input type="text" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email ID</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number</label></td>
+                <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td><textarea id="address" name="address" rows="3" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="course">Course Applied For</label></td>
+                <td>
+                    <select id="course" name="course" required>
+                        <option value="">--Select Course--</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BSc">B.Sc</option>
+                        <option value="BCom">B.Com</option>
+                        <option value="BA">BA</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="marks">Last Exam % Marks</label></td>
+                <td><input type="number" id="marks" name="marks" step="0.01" min="0" max="100" required></td>
+            </tr>
+            <tr>
+                <td>Upload Photo</td>
+                <td><input type="file" name="photo" accept="image/*"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <button type="submit">Submit Application</button>
+                    <button type="reset">Clear Form</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
